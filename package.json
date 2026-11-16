@@ -1,0 +1,17 @@
+{
+  "name": "dinohunter",
+  "version": "1.0.0",
+  "description": "Web3 threat-detection toolkit: scan contracts, calldata, bytecode, URLs and scripts for wallet drainers, phishing, honeypots and malicious approvals before you sign.",
+  "license": "MIT",
+  "main": "src/index.js",
+  "bin": { "dinohunter": "bin/dinohunter.js" },
+  "files": ["bin", "src", "data", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node bin/dinohunter.js serve",
+    "scan": "node bin/dinohunter.js scan",
+    "test": "node --test"
+  },
+  "keywords": ["web3", "security", "ethereum", "evm", "wallet-drainer", "phishing", "honeypot", "smart-contract", "calldata", "cli"],
+  "optionalDependencies": { "@anthropic-ai/sdk": ">=0.30.0" }
+}
